@@ -11,7 +11,7 @@ let html = "";
 if(data.meals){
     data.meals.forEach(meal =>{
         html += `
-        <div id="single_item" class="single-item">
+        <div onclick="expandMore()" id="single_item" class="single-item">
         <img class="Thumbnail-img" src="${meal.strMealThumb}" alt="">
         <h4 class="meal-name">${meal.strMeal}</h4>
         <div id="more-info">
@@ -46,19 +46,13 @@ document.getElementById('meal-info').innerHTML = html;
 });
 
 })
-// function expandMore(){
-// const moreDetails =document.getElementById('more-info');
-// for (let i = 0; i < moreDetails.length; i++) {
-//     const moreDetail = moreDetails[i];
-//    console.log(moreDetail) ;
+function expandMore(){
+const moreDetails =document.getElementById('more-info');
+for (let i = 0; i < moreDetails.length; i++) {
+    const moreDetail = moreDetails[i];   
 
-// if(moreDetail.style.display = "none"){
-//     moreDetail.style.display = "block"; 
-// }
+}
 
-// if(moreDetail.style.display = "block"){
-//     moreDetail.style.display = "none"; 
-// }
+moreDetails.style.display ="block";
 
-// }
-// }
+}

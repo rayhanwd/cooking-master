@@ -84,10 +84,11 @@ input[type=text] {
     margin: 0px 88%;
     text-align: center;
     position: scroll;
+    overflow: hidden;
 }
 
 #more-info{
-    display:block;
+    display:none;
     background: whitesmoke;
     margin:10px 30px;
     height:0%;
