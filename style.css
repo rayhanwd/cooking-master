@@ -53,48 +53,27 @@ input[type=text] {
     position: absolute;
 }
 
-#meal-info{
+#food-info{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     margin: 70px 85px;
+    
+}
+.food-text{
+  position: relative;
+  cursor: pointer;
+}
+img{
+    width:80%;
 }
 
-
-.Thumbnail-img{
-    max-width:100%;
-    margin: 0 auto;
+.food {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 50%;
+    position: fixed;
+    margin-left: 25%;
+    z-index: 1;
 }
 
-.single-item{
-    background: whitesmoke;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-    overflow: hidden;   
-}
-
-.meal-name{
-    padding:30px 0px;
-    text-align: center;
-}
-
-.error-message {
-    display:block;
-    width: 450px;
-    margin: 0px 88%;
-    text-align: center;
-    position: scroll;
-    overflow: hidden;
-}
-
-#more-info{
-    display:none;
-    background: whitesmoke;
-    margin:10px 30px;
-    height:0%;
-}
-
-#more-info ul {
-    display:block;
-    color: #3B2D64;
-}
